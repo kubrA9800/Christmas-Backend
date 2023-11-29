@@ -31,30 +31,23 @@
 <div class="banner-section section pt-120">
     <div class="container">
         <div class="row">
+            @foreach (var advert in Model.Adverts)
+            {
+                <div class="col-lg-6 col-12 mb-30">
 
-            <div class="col-lg-6 col-12 mb-30">
-
-                <div class="single-banner">
-                    <img src="img/banner/1.jpg" alt="banner">
-                    <div class="banner-content right">
-                        <h1 class="white"><span>Gifts</span>Christmas</h1>
-                        <a href="#" class="button">Shop Now</a>
+                    <div class="single-banner">
+                        <img src="img/banner/@advert.Image" alt="banner">
+                        <div class="banner-content right">
+                            @Html.Raw(advert.Text)
+                            <a href="#" class="button">Shop Now</a>
+                        </div>
                     </div>
+
                 </div>
+            }
+            
 
-            </div>
-
-            <div class="col-lg-6 col-12 mb-30">
-
-                <div class="single-banner">
-                    <img src="img/banner/2.jpg" alt="banner">
-                    <div class="banner-content left">
-                        <h2 class="black"><span class="small">Save <span class="red">25%</span></span><span class="red">Offer</span> Christmas</h2>
-                        <a href="#" class="link">Shop Now</a>
-                    </div>
-                </div>
-
-            </div>
+           
 
         </div>
     </div>
@@ -363,27 +356,18 @@
 
                 <!-- Testimonial Slider Start -->
                 <div class="testimonial-slider text-center">
-
+                    @foreach (var review in Model.Reviews)
+                    {
+                        <div class="single-testimonial">
+                            <img src="img/testimonial/@review.Image" alt="customer">
+                            <p>@review.Text</p>
+                            <h5>@review.CustomerName</h5>
+                        </div>
+                    }
                     <!-- Single Testimonial -->
-                    <div class="single-testimonial">
-                        <img src="img/testimonial/1.jpg" alt="customer">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-                        <h5>Betty Moore</h5>
-                    </div>
+                   
 
-                    <!-- Single Testimonial -->
-                    <div class="single-testimonial">
-                        <img src="img/testimonial/1.jpg" alt="customer">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-                        <h5>Betty Moore</h5>
-                    </div>
-
-                    <!-- Single Testimonial -->
-                    <div class="single-testimonial">
-                        <img src="img/testimonial/1.jpg" alt="customer">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-                        <h5>Betty Moore</h5>
-                    </div>
+                    
 
                 </div><!-- Testimonial Slider End -->
 

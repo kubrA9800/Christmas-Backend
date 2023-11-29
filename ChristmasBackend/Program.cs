@@ -6,6 +6,8 @@ using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddAutoMapper(typeof(Program));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -18,6 +20,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 builder.Services.AddScoped<ISliderService, SliderService>();
+builder.Services.AddScoped<IReviewService, ReviewServices>();
+
+builder.Services.AddScoped<IAdvertService, AdvertService>();
+
 
 
 var app = builder.Build();
