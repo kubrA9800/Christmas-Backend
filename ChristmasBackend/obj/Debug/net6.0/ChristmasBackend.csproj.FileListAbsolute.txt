@@ -6,6 +6,8 @@ D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\Christma
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\ChristmasBackend.runtimeconfig.json
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\ChristmasBackend.dll
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\ChristmasBackend.pdb
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\AutoMapper.dll
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\Humanizer.dll
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\MessagePack.dll
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -253,5 +255,3 @@ D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\refint\C
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.pdb
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.genruntimeconfig.cache
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ref\ChristmasBackend.dll
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\AutoMapper.dll
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -3,6 +3,7 @@ using ChristmasBackend.Areas.ViewModels.Advert;
 using ChristmasBackend.Areas.ViewModels.Blog;
 using ChristmasBackend.Areas.ViewModels.Review;
 using ChristmasBackend.Areas.ViewModels.Slider;
+using ChristmasBackend.Areas.ViewModels.Tag;
 using ChristmasBackend.Models;
 
 namespace ChristmasBackend.Helpers.Mappings
@@ -15,7 +16,8 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Advert, AdvertVM>();
             CreateMap<Review, ReviewVM>().ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Customer.Image));
-            CreateMap<Blog, BlogVM>().ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Images.FirstOrDefault(m => m.IsMain).Image));
+            CreateMap<Blog, BlogVM>();
+            CreateMap<Tag, TagVM>();
         }
     }
 }

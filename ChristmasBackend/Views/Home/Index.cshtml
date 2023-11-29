@@ -425,7 +425,7 @@
                 <div class="blog-item col-lg-4 col-md-6 col-12 mb-60">
 
                     <!-- Image -->
-                    <a href="blog-details.html" class="image"><img src="img/blog/@blog.Image" alt="blog"></a>
+                    <a asp-controller="BlogDetail" asp-action="Index" asp-route-id="@blog.Id" class="image"><img src="~/img/blog/@blog.Images.FirstOrDefault(m=>m.IsMain).Image" alt="blog"></a>
 
                     <!-- Content -->
                     <div class="content fix">
@@ -440,7 +440,7 @@
                         <p>@blog.Text.Substring(0,100)</p>
 
                         <!-- Read More Link -->
-                        <a href="blog-details.html" class="read-more">Read More</a>
+                        <a asp-controller="BlogDetail" asp-action="Index" asp-route-id="@blog.Id" class="read-more">Read More</a>
 
                     </div>
 
