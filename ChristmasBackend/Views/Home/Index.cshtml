@@ -419,79 +419,42 @@
         </div><!-- Section Title End-->
 
         <div class="row">
+            @foreach(var blog in Model.Blogs)
+            {
+                <!-- Blog Item Start-->
+                <div class="blog-item col-lg-4 col-md-6 col-12 mb-60">
 
-            <!-- Blog Item Start-->
-            <div class="blog-item col-lg-4 col-md-6 col-12 mb-60">
+                    <!-- Image -->
+                    <a href="blog-details.html" class="image"><img src="img/blog/@blog.Image" alt="blog"></a>
 
-                <!-- Image -->
-                <a href="blog-details.html" class="image"><img src="img/blog/1.jpg" alt="blog"></a>
+                    <!-- Content -->
+                    <div class="content fix">
 
-                <!-- Content -->
-                <div class="content fix">
+                        <!-- Publish Date -->
+                        <span class="publish"><span>Published on:</span>@blog.CreatedDate.ToString("MM/dd/yyyy")</span>
 
-                    <!-- Publish Date -->
-                    <span class="publish"><span>Published on:</span> 25 May 2017</span>
+                        <!-- Title -->
+                        <h4 class="title"><a href="blog-details.html">@blog.Title</a></h4>
 
-                    <!-- Title -->
-                    <h4 class="title"><a href="blog-details.html">If you are going to use a passage.</a></h4>
+                        <!-- Decs -->
+                        <p>@blog.Text.Substring(0,100)</p>
 
-                    <!-- Decs -->
-                    <p>If you are going to use a passage of Lorem Ipsum, yneed to be sure there isn't anything embarrassing hidden ithe middle text. All the Lorem Ipsum.</p>
+                        <!-- Read More Link -->
+                        <a href="blog-details.html" class="read-more">Read More</a>
 
-                    <!-- Read More Link -->
-                    <a href="blog-details.html" class="read-more">Read More</a>
-
-                </div>
-
-            </div><!-- Blog Item End-->
-            <!-- Blog Item Start-->
-            <div class="blog-item col-lg-4 col-md-6 col-12 mb-60">
-
-                <!-- Image -->
-                <a href="blog-details.html" class="image"><img src="img/blog/2.jpg" alt="blog"></a>
-
-                <!-- Content -->
-                <div class="content fix">
-
-                    <!-- Publish Date -->
-                    <span class="publish"><span>Published on:</span> 25 May 2017</span>
-
-                    <!-- Title -->
-                    <h4 class="title"><a href="blog-details.html">Ut enim ad minima veniam, quis.</a></h4>
-
-                    <!-- Decs -->
-                    <p>If you are going to use a passage of Lorem Ipsum, yneed to be sure there isn't anything embarrassing hidden ithe middle text. All the Lorem Ipsum.</p>
-
-                    <!-- Read More Link -->
-                    <a href="blog-details.html" class="read-more">Read More</a>
+                    </div>
 
                 </div>
 
+                <!-- Blog Item End-->
+            }
+            
+
+            
+
             </div><!-- Blog Item End-->
             <!-- Blog Item Start-->
-            <div class="blog-item col-lg-4 col-md-6 col-12 mb-60">
-
-                <!-- Image -->
-                <a href="blog-details.html" class="image"><img src="img/blog/3.jpg" alt="blog"></a>
-
-                <!-- Content -->
-                <div class="content fix">
-
-                    <!-- Publish Date -->
-                    <span class="publish"><span>Published on:</span> 25 May 2017</span>
-
-                    <!-- Title -->
-                    <h4 class="title"><a href="blog-details.html">At vero eos et accusamus et iusto</a></h4>
-
-                    <!-- Decs -->
-                    <p>If you are going to use a passage of Lorem Ipsum, yneed to be sure there isn't anything embarrassing hidden ithe middle text. All the Lorem Ipsum.</p>
-
-                    <!-- Read More Link -->
-                    <a href="blog-details.html" class="read-more">Read More</a>
-
-                </div>
-
-            </div><!-- Blog Item End-->
+           
 
         </div>
 
