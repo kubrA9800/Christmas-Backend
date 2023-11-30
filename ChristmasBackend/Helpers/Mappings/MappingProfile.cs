@@ -27,6 +27,7 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<About, AboutVM>();
             CreateMap<Team, TeamVM>();
             CreateMap<Brand, BrandVM>();
+            CreateMap<TeamCreateVM, Team>();
 
         }
     }

@@ -1,0 +1,54 @@
+﻿@model TeamVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div style="margin-right:100px" class="container mt-5">
+    <h1 style="margin-top:100px" class="text-center">Team</h1>
+    
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Full Name
+                    </th>
+                    <th>
+                        Position
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+               
+                    <tr>
+                        <td class="py-1">
+                            <img style="width:150px; height:150px" src="~/img/team/@Model.Image" alt="image" />
+                        </td>
+
+                        <td>
+                            @Model.FullName
+                        </td>
+                        <td style="white-space:normal">
+                            @Model.Position
+                        </td>
+
+
+
+                    </tr>
+               
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="back mt-2">
+        <a class="btn btn-info" asp-action="index">Back</a>
+
+    </div>
+</div>
+
