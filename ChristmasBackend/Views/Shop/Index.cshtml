@@ -1,0 +1,62 @@
+﻿@model Paginate<ProductVM>
+
+@{
+    ViewData["Title"] = "Shop";
+}
+
+
+
+<!-- Main Wrapper Start -->
+<div id="main-wrapper" class="section">
+
+
+    <!-- Page Banner Section Start-->
+    <div class="page-banner-section section" style="background-image: url(/img/bg/page-banner.jpg)">
+        <div class="container">
+            <div class="row">
+
+                <!-- Page Title Start -->
+                <div class="page-title text-center col">
+                    <h1>shop page</h1>
+                </div><!-- Page Title End -->
+
+            </div>
+        </div>
+    </div><!-- Page Banner Section End-->
+    <!-- Product Section Start-->
+    <div class="product-section section pt-120 pb-120">
+        <div class="container">
+
+            <!-- Product Wrapper Start-->
+            <div class="row">
+
+                <partial name="_ProductPartial" model="@Model.Datas" />
+                <!-- Pagination Start -->
+                <div class="pagination col-12 mt-20">
+                    <ul>
+                        @for (int i = 1; i <= Model.TotalPage; i++)
+                        {
+                            <li class="@(Model.CurrentPage == i ? "active" : "")">
+                                <a asp-action="Index" asp-route-page="@i">@i</a>
+                            </li>
+
+                        }
+
+
+                        <li class="page-item arrows @(Model.HasNext ? "" : "disabled")">
+                            <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage + 1)">
+                                <i class="fa fa-angle-right " style="position:relative; top:-10px; left:-3px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- Pagination End -->
+
+            </div><!-- Product Wrapper End-->
+
+        </div>
+    </div><!-- Product Section End-->
+
+
+
+</div><!-- Main Wrapper End -->
+

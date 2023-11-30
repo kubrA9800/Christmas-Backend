@@ -132,7 +132,7 @@
                                 <ul>
                                     <li class="active"><a href="index.html">home</a></li>
                                     <li>
-                                        <a href="shop.html">shop</a>
+                                        <a asp-controller="Shop" asp-action="Index">shop</a>
                                         <ul class="sub-menu">
                                             <li><a href="shop.html">shop page</a></li>
                                             <li><a href="product-details.html">product details</a></li>
@@ -284,6 +284,7 @@
 <script src="~/js/ajax-mail.js"></script>
 <!-- Main JS -->
 <script src="~/js/main.js"></script>
+    @RenderSection("script", required: false);
 </body>
 
 </html>

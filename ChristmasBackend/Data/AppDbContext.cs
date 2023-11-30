@@ -14,6 +14,13 @@ namespace ChristmasBackend.Data
         public DbSet<BlogImage> BlogImages { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<BlogTag> BlogTags { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<About> Abouts { get; set; }
+        public DbSet<Team> Teams { get; set; }
+
 
 
 

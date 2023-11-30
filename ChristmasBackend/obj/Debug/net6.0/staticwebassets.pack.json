@@ -16061,6 +16061,10 @@
       "PackagePath": "staticwebassets\\img\\testimonial\\1.jpg"
     },
     {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\Product.js",
+      "PackagePath": "staticwebassets\\js\\Product.js"
+    },
+    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\ajax-mail.js",
       "PackagePath": "staticwebassets\\js\\ajax-mail.js"
     },
