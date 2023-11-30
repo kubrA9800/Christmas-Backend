@@ -1,0 +1,22 @@
+﻿@model SliderVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div style="margin-right:100px" class="container mt-5">
+
+    <div style="width:150px; height:150px;" class="image">
+        <img src="~/img/hero/@Model.Image" style="width:100%" />
+    </div>
+
+    <div class="slider-text">
+        <h6>@Model.SaleText</h6>
+        <h6>@Model.Title</h6>
+        <p>@Model.Description</p>
+    </div>
+
+    <div class="back mt-2">
+        <a class="btn btn-info text-white" asp-action="Index">Back</a>
+    </div>
+</div>
+

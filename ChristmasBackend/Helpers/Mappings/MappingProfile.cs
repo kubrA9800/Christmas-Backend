@@ -17,6 +17,7 @@ namespace ChristmasBackend.Helpers.Mappings
         public MappingProfile()
         {
             CreateMap<Slider, SliderVM>();
+            CreateMap<Slider, SliderCreateVM>().ReverseMap();
             CreateMap<Advert, AdvertVM>();
             CreateMap<Review, ReviewVM>().ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Customer.Image));
