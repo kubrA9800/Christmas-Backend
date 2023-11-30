@@ -23,6 +23,10 @@ builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<IReviewService, ReviewServices>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IAboutService, AboutService>();
+builder.Services.AddScoped<ITeamService, TeamService>();
+builder.Services.AddScoped<IBrandService, BrandService>();
+
 
 builder.Services.AddScoped<IAdvertService, AdvertService>();
 
