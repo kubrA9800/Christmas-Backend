@@ -26,6 +26,8 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAboutService, AboutService>();
 builder.Services.AddScoped<ITeamService, TeamService>();
 builder.Services.AddScoped<IBrandService, BrandService>();
+builder.Services.AddScoped<ISettingService, SettingService>();
+builder.Services.AddScoped<ILayoutService, LayoutService>();
 
 
 builder.Services.AddScoped<IAdvertService, AdvertService>();

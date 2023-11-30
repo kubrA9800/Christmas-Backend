@@ -20,6 +20,8 @@ namespace ChristmasBackend.Data
         public DbSet<Brand> Brands { get; set; }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+
 
 
 
