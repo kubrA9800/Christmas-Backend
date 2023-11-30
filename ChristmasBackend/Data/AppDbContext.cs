@@ -21,6 +21,10 @@ namespace ChristmasBackend.Data
         public DbSet<About> Abouts { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<ContactInfo> ContactInfos { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
+
+
 
 
 
