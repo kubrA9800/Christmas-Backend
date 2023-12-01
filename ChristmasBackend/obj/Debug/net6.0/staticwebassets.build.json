@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hvJxLzEAykDNQBM2UOxdnwit6saKjD/UBvssDg+gHfc=",
+  "Hash": "UXc8igs/69L9mGi8a8nSI4q+IyEBS2E76TH7vbigzu0=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -75123,12 +75123,12 @@
       "OriginalItemSpec": "wwwroot\\img\\banner\\2.jpg"
     },
     {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\banner\\cf749d76-d229-4c60-b88b-35e47b192254 - favicon.png",
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\banner\\991f740b-260b-4175-9945-e4c8cedaecb0 - h3-background-img.jpg",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
       "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/banner/cf749d76-d229-4c60-b88b-35e47b192254 - favicon.png",
+      "RelativePath": "img/banner/991f740b-260b-4175-9945-e4c8cedaecb0 - h3-background-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -75137,7 +75137,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\banner\\cf749d76-d229-4c60-b88b-35e47b192254 - favicon.png"
+      "OriginalItemSpec": "wwwroot\\img\\banner\\991f740b-260b-4175-9945-e4c8cedaecb0 - h3-background-img.jpg"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\bg\\footer-bg.png",

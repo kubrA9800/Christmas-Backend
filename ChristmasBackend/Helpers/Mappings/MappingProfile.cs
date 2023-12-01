@@ -3,6 +3,7 @@ using ChristmasBackend.Areas.ViewModels.About;
 using ChristmasBackend.Areas.ViewModels.Advert;
 using ChristmasBackend.Areas.ViewModels.Blog;
 using ChristmasBackend.Areas.ViewModels.Brand;
+using ChristmasBackend.Areas.ViewModels.Contact;
 using ChristmasBackend.Areas.ViewModels.Review;
 using ChristmasBackend.Areas.ViewModels.Slider;
 using ChristmasBackend.Areas.ViewModels.Tag;
@@ -31,6 +32,8 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Team, TeamVM>();
             CreateMap<Brand, BrandVM>();
             CreateMap<TeamCreateVM, Team>();
+            CreateMap<ContactInfo, ContactVM>();
+
 
 
         }

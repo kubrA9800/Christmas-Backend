@@ -28,6 +28,7 @@ builder.Services.AddScoped<ITeamService, TeamService>();
 builder.Services.AddScoped<IBrandService, BrandService>();
 builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
+builder.Services.AddScoped<IContactService, ContactService>();
 
 
 builder.Services.AddScoped<IAdvertService, AdvertService>();
