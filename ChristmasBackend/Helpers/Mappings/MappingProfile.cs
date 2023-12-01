@@ -19,6 +19,8 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Slider, SliderVM>();
             CreateMap<Slider, SliderCreateVM>().ReverseMap();
             CreateMap<Advert, AdvertVM>();
+            CreateMap<Advert, AdvertCreateVM>().ReverseMap();
+            CreateMap<Advert, AdvertEditVM>().ReverseMap();
             CreateMap<Review, ReviewVM>().ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Customer.Image));
             CreateMap<Blog, BlogVM>();
@@ -29,6 +31,7 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Team, TeamVM>();
             CreateMap<Brand, BrandVM>();
             CreateMap<TeamCreateVM, Team>();
+
 
         }
     }

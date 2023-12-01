@@ -1,0 +1,39 @@
+﻿@model AdvertVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div style="margin-right:100px" class="container mt-5">
+    <h1 class="text-center mt-3 mb-3">Adverts</h1>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+
+                    <th>
+                        Description
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-1">
+                        <img style="width:200px;height:150px" src="~/img/banner/@Model.Image" alt="image" />
+                    </td>
+
+                    <td style="white-space:normal">
+                        @Html.Raw(Model.Text)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="back mt-3">
+        <a class="btn btn-info" asp-action="Index">Back</a>
+    </div>
+</div>
+

@@ -1,0 +1,30 @@
+﻿@model AdvertEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div style="margin-right:100px" class="container mt-5">
+    <h1>Edit</h1>
+    <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label asp-for="Text">Description</label>
+            <input asp-for="Text" class="form-control" placeholder="Description">
+            <span asp-validation-for="Text"></span>
+
+        </div>
+        <div class="form-group">
+            <label asp-for="Photo">Logo</label>
+            <div class="image">
+                <img src="~/img/banner/@Model.Image" style="width:30%; height:15%" />
+                <input asp-for="Photo" class="form-control">
+                <span asp-validation-for="Photo"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <div class="back mt-3">
+            <a class="btn btn-info" asp-action="Index">Back</a>
+        </div>
+    </form>
+</div>
