@@ -30,8 +30,12 @@ namespace ChristmasBackend.Helpers.Mappings
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Images.FirstOrDefault(m => m.IsMain).Image));
             CreateMap<About, AboutVM>();
             CreateMap<Team, TeamVM>();
-            CreateMap<Brand, BrandVM>();
+            CreateMap<Brand, BrandVM>().ReverseMap();
+            CreateMap<Brand, BrandCreateVM>().ReverseMap();
+            CreateMap<Brand, BrandEditVM>().ReverseMap();
+
             CreateMap<TeamCreateVM, Team>();
+            CreateMap<TeamEditVM, Team>().ReverseMap();
             CreateMap<ContactInfo, ContactVM>();
 
 

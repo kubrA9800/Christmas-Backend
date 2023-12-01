@@ -1,0 +1,45 @@
+﻿@model List<BrandVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="margin-right:100px" class="container">
+    <h1 class="text-center mt-3 mb-3">Brands</h1>
+    <a class="btn btn-success text-white" asp-action="Create">Create</a>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+
+                    <th>
+                        Operations
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var brand in Model)
+                {
+                    <tr>
+                        <td class="py-1">
+                            <img style="width:200px;width:150px" src="~/img/client/@brand.Image" alt="image" />
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-info" asp-action="Detail" asp-route-id="@brand.Id">Detail</a>
+                            <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@brand.Id">Edit</a>
+                            <form class="d-inline-block" method="post" asp-action="Delete" asp-route-id="@brand.Id">
+                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

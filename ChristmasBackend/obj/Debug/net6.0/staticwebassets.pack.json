@@ -17733,6 +17733,10 @@
       "PackagePath": "staticwebassets\\img\\cart\\2.jpg"
     },
     {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\0dda8123-097c-4faa-a83c-52c3a1ba309b - blog-feature-img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\client\\0dda8123-097c-4faa-a83c-52c3a1ba309b - blog-feature-img-4.jpg"
+    },
+    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\1.png",
       "PackagePath": "staticwebassets\\img\\client\\1.png"
     },
@@ -17751,10 +17755,6 @@
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\5.png",
       "PackagePath": "staticwebassets\\img\\client\\5.png"
-    },
-    {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\6.png",
-      "PackagePath": "staticwebassets\\img\\client\\6.png"
     },
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\comment\\1.jpg",

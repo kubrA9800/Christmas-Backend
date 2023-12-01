@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UXc8igs/69L9mGi8a8nSI4q+IyEBS2E76TH7vbigzu0=",
+  "Hash": "mdkRssAc+P6nqKYy/ESfso3QFPobLioeYHzjEnkd0KM=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -75395,6 +75395,23 @@
       "OriginalItemSpec": "wwwroot\\img\\cart\\2.jpg"
     },
     {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\0dda8123-097c-4faa-a83c-52c3a1ba309b - blog-feature-img-4.jpg",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "img/client/0dda8123-097c-4faa-a83c-52c3a1ba309b - blog-feature-img-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\client\\0dda8123-097c-4faa-a83c-52c3a1ba309b - blog-feature-img-4.jpg"
+    },
+    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\1.png",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -75478,23 +75495,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\client\\5.png"
-    },
-    {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\6.png",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/client/6.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\client\\6.png"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\comment\\1.jpg",
