@@ -1,0 +1,55 @@
+﻿﻿
+@model AboutVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div style="margin-right:100px" class="container mt-5">
+	<h1 class="text-center mt-3 mb-3">About</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						Image
+					</th>
+
+					<th>
+						Title
+					</th>
+					<th>
+						Description
+					</th>
+					<th>
+						Video
+					</th>
+					
+
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<td class="py-1">
+						<img style="width:250px;height:150px" src="~/img/@Model.Image" alt="image" />
+					</td>
+
+					<td style="white-space:normal">
+						@Html.Raw(Model.Title)
+					</td>
+					<td style="white-space:normal">
+						@Model.Description
+					</td>
+					<td style="white-space:normal">
+						@Model.Video
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="back mt-2">
+		<a class="btn btn-info text-white" asp-action="Index">Back</a>
+	</div>
+</div>
+

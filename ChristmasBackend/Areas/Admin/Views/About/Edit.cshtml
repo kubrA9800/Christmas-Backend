@@ -1,0 +1,45 @@
+﻿﻿
+@model AboutEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div style="margin-left:300px; width:60%">
+    <div style="width:200px; height:150px;" class="image">
+        <img src="~/img/@Model.Image" style="width:100%" />
+    </div>
+    <form class="forms-sample mt-5" method="post" enctype="multipart/form-data" asp-action="Edit">
+        <div class="form-group">
+            <label asp-for="Title">Title</label>
+            <textarea style="border-color:grey;" asp-for="Title" id="description" cols="70"></textarea>
+            <span asp-validation-for="Title"></span>
+        </div>
+        <div class="form-group my-3">
+            <label asp-for="Desc">Description</label>
+            <input asp-for="Desc" type="text" class="form-control">
+            <span class="text-danger" asp-validation-for="Desc"></span>
+        </div>
+        <div class="form-group my-3">
+            <label asp-for="Video">Video</label>
+            <input asp-for="Video" type="text" class="form-control">
+            <span class="text-danger" asp-validation-for="Video"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Photo">Image</label>
+            <input asp-for="Photo" class="form-control">
+            <span asp-validation-for="Photo"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <div class="back mt-3">
+            <a class="btn btn-info" asp-action="Index">Back</a>
+        </div>
+    </form>
+
+</div>
+
+@section script{
+
+    <script src="~/admin/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("description");</script>
+}
+

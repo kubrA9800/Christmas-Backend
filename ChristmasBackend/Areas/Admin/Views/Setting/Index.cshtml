@@ -1,0 +1,60 @@
+﻿@model List<Setting>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div style="margin-right:100px" class="container mt-5">
+    <h1 class="text-center mt-3 mb-3">Adverts</h1>
+    <a class="btn btn-success" asp-action="Create">Create</a>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Key
+                    </th>
+
+                    <th>
+                        Value
+                    </th>
+                    <th>
+                        Operations
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="white-space:normal">
+                            @item.Key
+                        </td>
+                        <td style="">
+                            @if (item.Key.Contains("Logo"))
+                            {
+                                <img src="~/img/@item.Value" />
+                            }
+                            else
+                            {
+                                @item.Value
+                            }
+                        </td>
+
+                        <td>
+                            <a class="btn btn-info" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            <form class="d-inline-block" method="post" asp-action="Delete" asp-route-id="@item.Id">
+                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                            </form>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

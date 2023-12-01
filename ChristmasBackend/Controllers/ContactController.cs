@@ -13,7 +13,6 @@ namespace ChristmasBackend.Controllers
 
         public ContactController( ISettingService settingService, IContactService contactService)
         {
-            
             _settingService = settingService;
             _contactService = contactService;
         }

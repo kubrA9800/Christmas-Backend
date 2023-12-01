@@ -5,6 +5,7 @@ using ChristmasBackend.Areas.ViewModels.Blog;
 using ChristmasBackend.Areas.ViewModels.Brand;
 using ChristmasBackend.Areas.ViewModels.Contact;
 using ChristmasBackend.Areas.ViewModels.Review;
+using ChristmasBackend.Areas.ViewModels.Setting;
 using ChristmasBackend.Areas.ViewModels.Slider;
 using ChristmasBackend.Areas.ViewModels.Tag;
 using ChristmasBackend.Areas.ViewModels.Team;
@@ -29,6 +30,7 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Product, ProductVM>().ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Images.FirstOrDefault(m => m.IsMain).Image));
             CreateMap<About, AboutVM>();
+            CreateMap<About, AboutEditVM>().ReverseMap();
             CreateMap<Team, TeamVM>();
             CreateMap<Brand, BrandVM>().ReverseMap();
             CreateMap<Brand, BrandCreateVM>().ReverseMap();
@@ -37,6 +39,7 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<TeamCreateVM, Team>();
             CreateMap<TeamEditVM, Team>().ReverseMap();
             CreateMap<ContactInfo, ContactVM>();
+            CreateMap<Setting, SettingCreateVM>().ReverseMap();
 
 
 

@@ -1,3 +1,11 @@
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.csproj.AssemblyReference.cache
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.AssemblyInfoInputs.cache
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.AssemblyInfo.cs
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.csproj.CoreCompileInputs.cache
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.MvcApplicationPartsAssemblyInfo.cache
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.RazorAssemblyInfo.cache
+D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.RazorAssemblyInfo.cs
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\appsettings.Development.json
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\appsettings.json
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\ChristmasBackend.staticwebassets.runtime.json
@@ -230,14 +238,6 @@ D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\runtimes
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.csproj.AssemblyReference.cache
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.GeneratedMSBuildEditorConfig.editorconfig
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.AssemblyInfoInputs.cache
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.AssemblyInfo.cs
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.csproj.CoreCompileInputs.cache
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.MvcApplicationPartsAssemblyInfo.cache
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.RazorAssemblyInfo.cache
-D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\ChristmasBackend.RazorAssemblyInfo.cs
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\staticwebassets\msbuild.ChristmasBackend.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\staticwebassets\msbuild.build.ChristmasBackend.props
 D:\Christmas-Backend\ChristmasBackend\ChristmasBackend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ChristmasBackend.props
