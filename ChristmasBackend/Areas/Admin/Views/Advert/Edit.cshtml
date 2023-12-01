@@ -9,7 +9,7 @@
 
         <div class="form-group">
             <label asp-for="Text">Description</label>
-            <input asp-for="Text" class="form-control" placeholder="Description">
+            <textarea style="border-color:grey;" asp-for="Text" id="Description" cols="70"></textarea>
             <span asp-validation-for="Text"></span>
 
         </div>
@@ -28,3 +28,8 @@
         </div>
     </form>
 </div>
+@section script{
+
+    <script src="~/admin/ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace("Description");</script>
+}

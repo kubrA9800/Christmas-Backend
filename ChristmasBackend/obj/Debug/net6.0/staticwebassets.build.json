@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mdkRssAc+P6nqKYy/ESfso3QFPobLioeYHzjEnkd0KM=",
+  "Hash": "VDGadV7b4APJiXvF9XnZC1c4f+d0/NjDOZyqR8pHOGA=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -75412,23 +75412,6 @@
       "OriginalItemSpec": "wwwroot\\img\\client\\0dda8123-097c-4faa-a83c-52c3a1ba309b - blog-feature-img-4.jpg"
     },
     {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\1.png",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/client/1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\client\\1.png"
-    },
-    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\2.png",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -75495,6 +75478,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\client\\5.png"
+    },
+    {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\client\\5c9d18a2-216c-4ba3-9fca-e71b64bcb20b-favicon.png",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "img/client/5c9d18a2-216c-4ba3-9fca-e71b64bcb20b-favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\client\\5c9d18a2-216c-4ba3-9fca-e71b64bcb20b-favicon.png"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\comment\\1.jpg",
