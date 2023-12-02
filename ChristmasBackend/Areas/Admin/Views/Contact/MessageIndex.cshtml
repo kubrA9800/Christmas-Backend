@@ -35,7 +35,7 @@
                             @message.Email
                         </td>
                         <td class="py-1">
-                            @message.Message.Substring(0, (int)Math.Ceiling(message.Message.Length * 0.2)) ....
+                            @*@message.Message.Substring(0, (int)Math.Ceiling(message.Message.Length * 0.2)) ....*@
                         </td>
                         <td>
                             <a class="btn btn-outline-info" asp-action="MessageDetail" asp-route-id="@message.Id">Detail</a>
