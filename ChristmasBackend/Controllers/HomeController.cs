@@ -2,9 +2,11 @@
 using ChristmasBackend.Areas.ViewModels.Blog;
 using ChristmasBackend.Areas.ViewModels.Review;
 using ChristmasBackend.Areas.ViewModels.Slider;
+using ChristmasBackend.Areas.ViewModels.Subscribe;
 using ChristmasBackend.Areas.ViewModels.Новая_папка;
 using ChristmasBackend.Data;
 using ChristmasBackend.Models;
+using ChristmasBackend.Services;
 using ChristmasBackend.Services.Interfaces;
 using ChristmasBackend.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -21,12 +23,14 @@ namespace ChristmasBackend.Controllers
         private IReviewService _reviewService;
         private readonly IBlogService _blogService;
         private readonly IProductService _productService;
+        private readonly ISubscribeService _subscribeService;
         public HomeController(AppDbContext context, 
                               ISliderService sliderService,
                               IAdvertService advertService,
                               IReviewService reviewService,
                               IBlogService blogService,
-                              IProductService productService)
+                              IProductService productService,
+                              ISubscribeService subscribeService)
         {
             _context = context;
             _sliderService = sliderService;
@@ -34,6 +38,8 @@ namespace ChristmasBackend.Controllers
             _reviewService = reviewService;
             _blogService = blogService;
             _productService = productService;
+            _subscribeService = subscribeService;
+
         }
 
         public async Task<IActionResult> Index()
@@ -65,6 +71,15 @@ namespace ChristmasBackend.Controllers
             List<ProductVM> products = await _productService.ShowMoreOrLess(3, skipCount);
 
             return PartialView("_ProductPartial", products);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateSubscribe(SubscribeCreateVM subscribe)
+        {
+
+            await _subscribeService.CreateAsync(subscribe);
+            return RedirectToAction("Index", "Home");
         }
 
 

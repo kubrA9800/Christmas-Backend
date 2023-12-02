@@ -2,6 +2,7 @@
 using ChristmasBackend.Areas.ViewModels.Blog;
 using ChristmasBackend.Areas.ViewModels.Review;
 using ChristmasBackend.Areas.ViewModels.Slider;
+using ChristmasBackend.Areas.ViewModels.Subscribe;
 using ChristmasBackend.Areas.ViewModels.Новая_папка;
 
 namespace ChristmasBackend.ViewModels
@@ -13,6 +14,7 @@ namespace ChristmasBackend.ViewModels
         public List<ReviewVM> Reviews { get; set; }
         public List<BlogVM> Blogs { get; set; }
         public List<ProductVM> Products { get; set; }
+        public SubscribeCreateVM Subscribe { get; set; }
 
     }
 }

@@ -1,7 +1,27 @@
-﻿@model ContactVM
+﻿@model ContactPageVM
 @{
     ViewData["Title"] = "Index";
 }
+
+<style>
+    .submit-button {
+        padding: 6px 44px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: auto;
+        background-color: transparent;
+        margin-bottom: 0;
+        border: 1px solid #e9e9e9;
+    }
+
+        .submit-button:hover {
+            background-color: #83a931;
+            border-color: #83a931;
+            color: #ffffff;
+            font-weight: 700;
+        }
+</style>
 
 <!-- Page Banner Section Start-->
 <div class="page-banner-section section" style="background-image: url(/img/bg/page-banner.jpg)">
@@ -28,11 +48,11 @@
 
                         <div class="contact-info col-lg-5 col-12">
                             <h4 class="title">Contact Info</h4>
-                            <p>@Model.Description</p>
+                            <p>@Model.Contact.Description</p>
                             <ul>
-                                <li><span>Address:</span>@Model.Address</li>
-                                <li><span>Email:</span>@Model.Email</li>
-                                <li><span>Phone:</span>@Model.Phone</li>
+                                <li><span>Address:</span>@Model.Contact.Address</li>
+                                <li><span>Email:</span>@Model.Contact.Email</li>
+                                <li><span>Phone:</span>@Model.Contact.Phone</li>
                             </ul>
                             <div class="contact-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -43,13 +63,14 @@
                         </div>
                         <div class="contact-form col-lg-7 col-12">
                             <h4 class="title">Send Your Massage</h4>
-                            <form id="contact-form" action="https://demo.hasthemes.com/christ-preview/christ/mail.php" method="post">
-                                <input type="text" name="name" placeholder="Your Name">
-                                <input type="email" name="email" placeholder="Your Email">
-                                <textarea name="message" placeholder="Your Message"></textarea>
-                                <input type="submit" value="Submit">
+                            <form id="contact-form" asp-action="CreateMessage" method="post">
+                                <input asp-for="@Model.NewContact.Name" type="text" name="name" required placeholder="Your Name">
+                                <input asp-for="@Model.NewContact.Email" type="email" name="email" required placeholder="Your Email">
+                                <textarea asp-for="@Model.NewContact.Message" name="message" required placeholder="Your Message"></textarea>
+                                @*<input type="submit" value="Submit">*@
+                                <button class="submit-button" type="submit">Submit</button>
                             </form>
-                            <p class="form-messege"></p>
+                            
                         </div>
 
                     </div>

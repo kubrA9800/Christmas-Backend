@@ -1,0 +1,17 @@
+﻿
+@model ContactInfoEditVM
+@{
+    ViewData["Title"] = "InfoEdit";
+}
+<div style="margin-right:100px" class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="InfoEdit">
+        <div class="form-group mb-3">
+            <label asp-for="Description">New Description</label>
+            <input asp-for="Description" type="text" class="form-control">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-4">Submit</button>
+        <a class="btn btn-light" asp-action="InfoIndex">Back</a>
+    </form>
+</div>
+

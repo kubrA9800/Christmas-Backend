@@ -7,6 +7,7 @@ using ChristmasBackend.Areas.ViewModels.Contact;
 using ChristmasBackend.Areas.ViewModels.Review;
 using ChristmasBackend.Areas.ViewModels.Setting;
 using ChristmasBackend.Areas.ViewModels.Slider;
+using ChristmasBackend.Areas.ViewModels.Subscribe;
 using ChristmasBackend.Areas.ViewModels.Tag;
 using ChristmasBackend.Areas.ViewModels.Team;
 using ChristmasBackend.Areas.ViewModels.Новая_папка;
@@ -35,10 +36,15 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Brand, BrandVM>().ReverseMap();
             CreateMap<Brand, BrandCreateVM>().ReverseMap();
             CreateMap<Brand, BrandEditVM>().ReverseMap();
-
+            CreateMap<Subscribe, SubscribeVM>().ReverseMap();
+            CreateMap<SubscribeCreateVM, Subscribe>().ReverseMap();
             CreateMap<TeamCreateVM, Team>();
             CreateMap<TeamEditVM, Team>().ReverseMap();
-            CreateMap<ContactInfo, ContactVM>();
+            CreateMap<ContactInfo, ContactVM>().ReverseMap();
+            CreateMap<ContactVM, ContactMessageVM>().ReverseMap();
+            CreateMap<ContactMessage, ContactMessageVM>().ReverseMap();
+            CreateMap<ContactMessageCreateVM, ContactMessage>().ReverseMap();
+            CreateMap<ContactInfo, ContactInfoEditVM>().ReverseMap();
             CreateMap<Setting, SettingCreateVM>().ReverseMap();
 
 

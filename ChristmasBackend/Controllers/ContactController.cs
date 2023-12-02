@@ -2,6 +2,7 @@
 using ChristmasBackend.Areas.ViewModels.Contact;
 using ChristmasBackend.Data;
 using ChristmasBackend.Services.Interfaces;
+using ChristmasBackend.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChristmasBackend.Controllers
@@ -18,17 +19,26 @@ namespace ChristmasBackend.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            Dictionary<string, string> settingDatas = _settingService.GetSettings();
+            
             ContactVM contact = await _contactService.GetData();
 
-            ContactVM model = new()
+            ContactPageVM model = new()
             {
-                Description = contact.Description,
-                Phone = settingDatas["Phone"],
-                Address = settingDatas["Address"],
-                Email = settingDatas["Email"]
+               Contact= contact
             };
             return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> CreateMessage(ContactMessageCreateVM request)
+        {
+
+            await _contactService.CreateAsync(request);
+
+            return RedirectToAction("Index", "Contact");
+
         }
     }
 }
