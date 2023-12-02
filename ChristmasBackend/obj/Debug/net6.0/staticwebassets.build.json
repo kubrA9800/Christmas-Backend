@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wHyZ392SzZ2UgoEILsTyMDEZWRnqbNhE0tPYpgayors=",
+  "Hash": "ryvOsucmLiJsvgrZZmXngciYAWrWUEi677BRnBdBx7M=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -11558,6 +11558,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\js\\plugins-init\\widgets-script-init.js"
+    },
+    {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\admin\\js\\product.js",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "admin/js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\product.js"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\admin\\js\\quixnav-init.js",
@@ -75990,23 +76007,6 @@
       "OriginalItemSpec": "wwwroot\\img\\product\\e31f7e5d-7b4d-471e-b930-d40cd917ec8e-b0add0c3-3bec-4c87-80a3-9eb251b15bcd-blog-feature-img-3.jpg"
     },
     {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\product\\fd321632-616a-47fa-b92f-f0823df8e307-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/product/fd321632-616a-47fa-b92f-f0823df8e307-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\product\\fd321632-616a-47fa-b92f-f0823df8e307-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg"
-    },
-    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\product-details\\1.jpg",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -76347,12 +76347,12 @@
       "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
     },
     {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\Product.js",
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\product.js",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
       "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "js/Product.js",
+      "RelativePath": "js/product.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -76361,7 +76361,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Product.js"
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",

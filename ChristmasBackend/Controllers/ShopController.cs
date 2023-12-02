@@ -32,6 +32,12 @@ namespace ChristmasBackend.Controllers
             int productCount = await _productService.GetCountAsync();
             return (int)Math.Ceiling((decimal)(productCount) / take);
         }
+
+        public async Task<IActionResult> Search(string searchText)
+        {
+
+            return View(await _productService.SearchAsync(searchText));
+        }
     }
 }
 

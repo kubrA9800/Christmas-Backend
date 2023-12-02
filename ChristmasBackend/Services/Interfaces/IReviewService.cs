@@ -4,6 +4,8 @@ namespace ChristmasBackend.Services.Interfaces
 {
     public interface IReviewService
     {
-        Task<List<ReviewVM>> GetAllAsync();
+        Task<List<ReviewVM>> GetAllWithIncludeAsync();
+        Task<ReviewVM> GetByIdWithIncludeAsync(int id);
+        Task DeleteAsync(int id);
     }
 }

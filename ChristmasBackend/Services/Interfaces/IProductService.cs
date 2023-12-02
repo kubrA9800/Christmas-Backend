@@ -13,5 +13,6 @@ namespace ChristmasBackend.Services.Interfaces
         Task<int> GetCountAsync();
         Task<List<ProductVM>> GetPaginatedDatasAsync(int page, int take);
         Task DeleteAsync(int id);
+        Task<List<ProductVM>> SearchAsync(string searchText);
     }
 }

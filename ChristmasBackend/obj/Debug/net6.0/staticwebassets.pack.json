@@ -2713,6 +2713,10 @@
       "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\widgets-script-init.js"
     },
     {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\admin\\js\\product.js",
+      "PackagePath": "staticwebassets\\admin\\js\\product.js"
+    },
+    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\admin\\js\\quixnav-init.js",
       "PackagePath": "staticwebassets\\admin\\js\\quixnav-init.js"
     },
@@ -17905,10 +17909,6 @@
       "PackagePath": "staticwebassets\\img\\product\\e31f7e5d-7b4d-471e-b930-d40cd917ec8e-b0add0c3-3bec-4c87-80a3-9eb251b15bcd-blog-feature-img-3.jpg"
     },
     {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\product\\fd321632-616a-47fa-b92f-f0823df8e307-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg",
-      "PackagePath": "staticwebassets\\img\\product\\fd321632-616a-47fa-b92f-f0823df8e307-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg"
-    },
-    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\section-title-bg.png",
       "PackagePath": "staticwebassets\\img\\section-title-bg.png"
     },
@@ -17933,10 +17933,6 @@
       "PackagePath": "staticwebassets\\img\\testimonial\\1.jpg"
     },
     {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\Product.js",
-      "PackagePath": "staticwebassets\\js\\Product.js"
-    },
-    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\ajax-mail.js",
       "PackagePath": "staticwebassets\\js\\ajax-mail.js"
     },
@@ -17959,6 +17955,10 @@
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
     },
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",

@@ -1,0 +1,51 @@
+﻿@model List<ProductVM>
+@{
+    ViewData["Title"] = "Search";
+}
+
+<style>
+    .search-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+
+    .title {
+        text-align: center;
+        color: #bdbbc4;
+        font-weight: unset;
+        font-size: 20px;
+    }
+
+    .description {
+        text-align: center;
+        color: #bdbbc4;
+        font-weight: unset;
+        margin-top: 20px;
+    }
+
+</style>
+
+<div class="container mt-5" style="margin-top:50px;">
+
+    @if (Model.Count() != 0)
+    {
+        <div style="display: flex; flex-wrap: wrap">
+            <partial name="_ProductsPartial" />
+        </div>
+
+
+    }
+
+    else
+    {
+        <div class="search-message">
+            <h1 class="title">No Results Found</h1>
+            <p class="description">We couldn't find any results for your search. Please try again with different keywords.</p>
+        </div>
+    }
+
+</div>
+

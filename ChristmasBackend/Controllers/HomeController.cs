@@ -47,7 +47,7 @@ namespace ChristmasBackend.Controllers
 
             List<SliderVM> sliders = await _sliderService.GetAllAsync();
             List<AdvertVM> adverts=await _advertService.GetAllAsync();
-            List<ReviewVM> reviews= await _reviewService.GetAllAsync();
+            List<ReviewVM> reviews = await _reviewService.GetAllWithIncludeAsync();
             List<BlogVM> blogs = await _blogService.GetAllAsync();
             List<ProductVM> products = await _productService.GetByTakeWithIncludes(3);
             HomeVM model= new()
