@@ -30,10 +30,8 @@ builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-
+builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<ISubscribeService, SubscribeService>();
-
-
 builder.Services.AddScoped<IAdvertService, AdvertService>();
 
 

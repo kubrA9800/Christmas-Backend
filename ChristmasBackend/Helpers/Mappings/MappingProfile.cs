@@ -3,6 +3,7 @@ using ChristmasBackend.Areas.ViewModels.About;
 using ChristmasBackend.Areas.ViewModels.Advert;
 using ChristmasBackend.Areas.ViewModels.Blog;
 using ChristmasBackend.Areas.ViewModels.Brand;
+using ChristmasBackend.Areas.ViewModels.Category;
 using ChristmasBackend.Areas.ViewModels.Contact;
 using ChristmasBackend.Areas.ViewModels.Review;
 using ChristmasBackend.Areas.ViewModels.Setting;
@@ -46,6 +47,16 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<ContactMessageCreateVM, ContactMessage>().ReverseMap();
             CreateMap<ContactInfo, ContactInfoEditVM>().ReverseMap();
             CreateMap<Setting, SettingCreateVM>().ReverseMap();
+            CreateMap<Tag, TagCreateVM>().ReverseMap();
+            CreateMap<Tag, TagEditVM>().ReverseMap();
+            CreateMap<Category, CategoryEditVM>().ReverseMap();
+            CreateMap<Category, CategoryVM>().ReverseMap();
+            CreateMap<Category, CategoryCreateVM>().ReverseMap();
+
+
+
+
+
 
 
 
