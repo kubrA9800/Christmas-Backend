@@ -24,7 +24,11 @@ namespace ChristmasBackend.Services
 
         public async Task EditAsync(CategoryEditVM category)
         {
-            _context.Categories.Update(_mapper.Map<Category>(category));
+            Category dbCategory = await _context.Categories.FirstOrDefaultAsync(m => m.Id == category.Id);
+            _mapper.Map(category, dbCategory);
+
+            _context.Categories.Update(dbCategory);
+
             await _context.SaveChangesAsync();
         }
 
@@ -35,7 +39,7 @@ namespace ChristmasBackend.Services
 
         public async Task<CategoryVM> GetByIdAsync(int id)
         {
-            return _mapper.Map<CategoryVM>(await _context.Categories.FindAsync(id));
+            return _mapper.Map<CategoryVM>(await _context.Categories.FirstOrDefaultAsync(m=>m.Id==id));
         }
 
         public async Task<CategoryVM> GetByNameAsync(string name)
