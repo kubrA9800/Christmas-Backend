@@ -46,7 +46,7 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<ContactMessage, ContactMessageVM>().ReverseMap();
             CreateMap<ContactMessageCreateVM, ContactMessage>().ReverseMap();
             CreateMap<ContactInfo, ContactInfoEditVM>().ReverseMap();
-            CreateMap<Setting, SettingCreateVM>().ReverseMap();
+            CreateMap<Setting, SettingEditVM>().ReverseMap();
             CreateMap<Tag, TagCreateVM>().ReverseMap();
             CreateMap<Tag, TagEditVM>().ReverseMap();
             CreateMap<Category, CategoryEditVM>().ReverseMap();

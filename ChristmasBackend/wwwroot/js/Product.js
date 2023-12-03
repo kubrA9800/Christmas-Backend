@@ -57,7 +57,7 @@
         e.preventDefault();
         let value = $(".input-search").val();
         let url = `/Shop/Search?searchText=${value}`;
-
+        console.log("fgh")
         window.location.assign(url);
 
     })

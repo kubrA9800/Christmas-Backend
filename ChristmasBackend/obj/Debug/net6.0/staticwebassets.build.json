@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o1WdbPjCwUD/JrTqVAz9MaDNWIKallTja9ExUyf8uV0=",
+  "Hash": "aW30DF6Syyr2QfG7yZmiMUQBHXSZwS5vZeVP9Pz8JJU=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -75616,23 +75616,6 @@
       "OriginalItemSpec": "wwwroot\\img\\favicon.ico"
     },
     {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\footer-logo.png",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/footer-logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\footer-logo.png"
-    },
-    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\hero\\1.jpg",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -76209,6 +76192,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\team\\4.jpg"
+    },
+    {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\team\\footer-logo.png",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "img/team/footer-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\team\\footer-logo.png"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\testimonial\\1.jpg",

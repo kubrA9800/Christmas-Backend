@@ -1,0 +1,34 @@
+﻿@model SettingEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mt-5" style="margin-right:100px">
+  
+   
+    <form class="forms-sample" asp-action="Edit" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            @if (Model.Key.Contains("Logo"))
+            {
+                <label asp-for="ImageValue">@Model.Key</label>
+                <div  class="image mt-2 mb-2">
+                    <img src="~/img/@Model.Value" />
+                </div>
+                <input asp-for="ImageValue" class="form-control">
+                <span class="text-danger" asp-validation-for="ImageValue"></span>
+            }
+            else
+            {
+                <div class="form-group">
+                    <label asp-for="Value">@Model.Key</label>
+                    <input asp-for="Value" class="form-control" />
+                    <span class="text-danger" asp-validation-for="Value"></span>
+                </div>
+            }
+            
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a class="btn btn-light" asp-action="Index">Back</a>
+    </form>
+</div>
+

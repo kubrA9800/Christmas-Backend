@@ -9,6 +9,7 @@ namespace ChristmasBackend.Services.Interfaces
         Dictionary<string, string> GetSettings();
         Task<List<Setting>> GetAllAsync();
         Task DeleteAsync(int id);
-        Task CreateAsync(SettingCreateVM setting);
+        Task<Setting> GetByIdAsync(int id);
+        Task EditAsync(SettingEditVM setting);
     }
 }

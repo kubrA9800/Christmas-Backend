@@ -25,6 +25,7 @@ namespace ChristmasBackend.Services
         public async Task EditAsync(CategoryEditVM category)
         {
             Category dbCategory = await _context.Categories.FirstOrDefaultAsync(m => m.Id == category.Id);
+
             _mapper.Map(category, dbCategory);
 
             _context.Categories.Update(dbCategory);

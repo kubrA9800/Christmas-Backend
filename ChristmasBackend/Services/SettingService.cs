@@ -59,23 +59,37 @@ namespace ChristmasBackend.Services
 
 
 
-        public async Task CreateAsync(SettingCreateVM setting)
+      
+
+        public async Task<Setting> GetByIdAsync(int id)
         {
-            string fileName = $"{Guid.NewGuid()}-{setting.ImageValue.FileName}";
-
-            string path = _env.GetFilePath("img", fileName);
-
-            var data = _mapper.Map<Slider>(setting);
-
-            data.Image = fileName;
-
-            await _context.AddAsync(data);
-
-            await _context.SaveChangesAsync();
-
-            await setting.ImageValue.SaveFileAsync(path);
-
+            return await _context.Settings.FirstOrDefaultAsync(m => m.Id == id);
         }
 
+        public async Task EditAsync(SettingEditVM setting)
+        {
+            if(setting.Value.Contains("jpg")|| setting.Value.Contains("png")|| setting.Value.Contains("jpeg"))
+            {
+                string oldPath = _env.GetFilePath("img/team", setting.Value);
+
+                string fileName = $"{Guid.NewGuid()}-{setting.ImageValue.FileName}";
+
+                string newPath = _env.GetFilePath("img/team", fileName);
+
+                Setting dbSetting=await _context.Settings.FirstOrDefaultAsync(m => m.Id == setting.Id);
+
+                dbSetting.Value = fileName;
+
+                await _context.SaveChangesAsync();
+
+                if (File.Exists(oldPath))
+                {
+                    File.Delete(oldPath);
+                }
+
+                await setting.ImageValue.SaveFileAsync(newPath);
+            }
+            
+        }
     }
 }

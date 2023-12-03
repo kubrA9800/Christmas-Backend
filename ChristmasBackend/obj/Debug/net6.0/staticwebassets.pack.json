@@ -17785,10 +17785,6 @@
       "PackagePath": "staticwebassets\\img\\favicon.ico"
     },
     {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\footer-logo.png",
-      "PackagePath": "staticwebassets\\img\\footer-logo.png"
-    },
-    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\hero\\1.jpg",
       "PackagePath": "staticwebassets\\img\\hero\\1.jpg"
     },
@@ -17923,6 +17919,10 @@
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\team\\4.jpg",
       "PackagePath": "staticwebassets\\img\\team\\4.jpg"
+    },
+    {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\team\\footer-logo.png",
+      "PackagePath": "staticwebassets\\img\\team\\footer-logo.png"
     },
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\testimonial\\1.jpg",
