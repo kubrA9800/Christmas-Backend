@@ -18,6 +18,9 @@
                         Description
                     </th>
                     <th>
+                        Created Date
+                    </th>
+                    <th>
                         Operations
                     </th>
 
@@ -34,7 +37,9 @@
                         <td style="white-space:normal">
                             @Html.Raw(item.Text)
                         </td>
-
+                        <th>
+                            @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </th>
                         <td>
                             <a class="btn btn-info" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
                             <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
