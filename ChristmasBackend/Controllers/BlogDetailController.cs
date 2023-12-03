@@ -14,7 +14,9 @@ namespace ChristmasBackend.Controllers
         private readonly AppDbContext _context;
         private readonly IBlogService _blogService;
         private readonly IMapper _mapper;
-        public BlogDetailController(AppDbContext context,IBlogService blogService, IMapper mapper)
+        public BlogDetailController(AppDbContext context,
+                                    IBlogService blogService,
+                                    IMapper mapper)
         {
             _context = context;
             _blogService = blogService;

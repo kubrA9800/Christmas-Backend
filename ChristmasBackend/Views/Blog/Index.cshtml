@@ -40,7 +40,7 @@
                                 <h4 class="title"><a href="blog-details.html">@blog.Title</a></h4>
 
                                 <!-- Decs -->
-                                <p>@blog.Text.Substring(0,100)</p>
+                                <p>@blog.Text.Substring(0,(int)Math.Ceiling(blog.Text.Length * 0.05))</p>
                                 <!-- Read More Link -->
                                 <a asp-controller="BlogDetail" asp-action="Index" asp-route-id="@blog.Id" class="read-more">Read More</a>
 
@@ -67,7 +67,7 @@
                                 <h4 class="title"><a href="blog-details.html">@blog.Title</a></h4>
 
                                 <!-- Decs -->
-                                <p>@blog.Text.Substring(0,100)</p>
+                                <p>@blog.Text.Substring(0,(int)Math.Ceiling(blog.Text.Length * 0.05))</p>
                                 <!-- Read More Link -->
                                 <a asp-controller="BlogDetail" asp-action="Index" asp-route-id="@blog.Id" class="read-more">Read More</a>
 

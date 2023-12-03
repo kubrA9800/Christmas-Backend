@@ -25,7 +25,7 @@ namespace ChristmasBackend.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<BlogVM> blogs = await _blogService.GetAllAsync();
+            List<BlogVM> blogs = await _blogService.GetAllWithTakeAsync();
             List<Tag> tags = await _context.Tags.ToListAsync();
             var tag = _mapper.Map<List<TagVM>>(tags);
 

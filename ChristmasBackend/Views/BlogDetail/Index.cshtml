@@ -43,7 +43,7 @@
                                 <h4 class="title">@Model.Blog.Title</h4>
 
                                 <!-- Decs -->
-                                <p>@Model.Blog.Text.Substring(0,300)</p>
+                                <p>@Model.Blog.Text.Substring(0,(int)Math.Ceiling(Model.Blog.Text.Length * 0.05))</p>
 
 
 

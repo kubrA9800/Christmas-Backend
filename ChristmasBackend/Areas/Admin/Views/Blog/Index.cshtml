@@ -1,0 +1,64 @@
+﻿@model List<BlogVM>
+@{
+	ViewData["Title"] = "Index";
+}
+
+<div style="margin-right:100px" class="container">
+	<h1 class="text-center mt-3 mb-3">Blogs</h1>
+	<a class="btn btn-success text-white" asp-action="Create">Create</a>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						Image
+					</th>
+					<th>
+						Title
+					</th>
+					<th>
+						Description
+					</th>
+					<th>
+						Create Date
+					</th>
+
+					<th>
+						Operations
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var blog in Model)
+				{
+					<tr>
+						<td class="py-1">
+
+
+							<img style="width:100px; height:100px" src="~/img/blog/@blog.Images.FirstOrDefault(m=>m.IsMain).Image" alt="image" />
+
+						</td>
+						<td>
+							@blog.Title
+						</td>
+						<td>
+							@blog.Text.Substring(0,(int)Math.Ceiling(blog.Text.Length * 0.05))
+						</td>
+						<td>
+							@blog.CreatedDate.ToString("MM/dd/yyyy")
+						</td>
+						<td>
+							<a class="btn btn-outline-info" asp-action="Detail" asp-route-id="@blog.Id">Detail</a>
+							<a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@blog.Id">Edit</a>
+							<form class="d-inline-block" method="post" asp-action="Delete" asp-route-id="@blog.Id">
+								<button type="submit" class="btn btn-outline-danger">Delete</button>
+							</form>
+						</td>
+					</tr>
+				}
+
+			</tbody>
+		</table>
+	</div>
+</div>
+

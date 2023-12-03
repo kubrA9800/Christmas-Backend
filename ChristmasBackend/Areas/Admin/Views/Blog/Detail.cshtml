@@ -1,0 +1,69 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .blog-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    .blog-info {
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    p {
+        color: #666;
+    }
+
+    .price {
+        color: #e44d26;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .active-image {
+        border: 3px solid greenyellow;
+    }
+</style>
+
+<div class="container">
+    @if (Model.Images.Count() != 0)
+    {
+        foreach (var item in Model.Images)
+        {
+            <img class="blog-image @(item.IsMain ? "active-image": "")" src="~/img/blog/@item.Image" alt="Blog Image">
+        }
+    }
+
+    <div class="blog-info">
+        <h2>@Model.Title</h2>
+        <p>@Model.Text</p>
+        <div class="back mt-2">
+            <a class="btn btn-info text-white" asp-action="Index">Back</a>
+        </div>
+    </div>
+</div>
+

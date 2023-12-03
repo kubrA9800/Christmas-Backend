@@ -4,10 +4,13 @@
     ViewData["Title"] = "Detail";
 }
 
-<div class="container mt-5">
-    <h3>Message:</h3>
-    <div class="slider-text">
-        <p>@Model.Message</p>
+<div style="margin-right:100px" class="container mt-5">
+    <h1>Detail</h1>
+    <div class="slider-text mt-3">
+        <h3>Name: <span>@Model.Name</span></h3>
+        <h3>Email: <span>@Model.Email</span></h3>
+
+        <h3>Message:<p>@Model.Message</p></h3>
     </div>
 
     <div class="back mt-2">

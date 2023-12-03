@@ -1,0 +1,98 @@
+﻿﻿
+@model BlogEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<style>
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .blog-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    .active-image {
+        border: 3px solid greenyellow;
+    }
+
+    .imageblogs-delete {
+        position: relative;
+    }
+
+        .imageblogs-delete button {
+            position: absolute;
+            left: 40px;
+            top: 58px;
+            opacity: 0;
+            transition: all 0.4s;
+        }
+
+        .imageblogs-delete:hover button {
+            position: absolute;
+            left: 40px;
+            top: 58px;
+            opacity: 1;
+        }
+
+        .imageblogs-delete:hover img {
+            opacity: 0.5;
+        }
+
+</style>
+
+<div class="container mt-5">
+    @if (Model.Images.Count() != 0)
+    {
+        <div class="d-flex flex-wrap">
+            @foreach (var item in Model.Images)
+            {
+                <div class="imageblogs-delete mx-1">
+                    <img class="blog-image @(item.IsMain ? "active-image": "")" src="~/img/blog/@item.Image" alt="Blog Image">
+                    @if (!item.IsMain)
+                    {
+                        <button data-id="@item.Id" class="btn btn-danger btn-sm">Delete</button>
+                    }
+                </div>
+
+            }
+        </div>
+
+    }
+
+    <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="Title">Title</label>
+            <input asp-for="Title" class="form-control" />
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Text">Description</label>
+            <input asp-for="Text" class="form-control" />
+            <span class="text-danger" asp-validation-for="Text"></span>
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="Photos">Image</label>
+            <input asp-for="Photos" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a class="btn btn-light" asp-action="Index">Back</a>
+    </form>
+</div>
+
+@section script{
+    <script src="~/admin/js/main.js"></script>
+}
+

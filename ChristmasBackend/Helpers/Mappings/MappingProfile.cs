@@ -27,7 +27,12 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<Advert, AdvertEditVM>().ReverseMap();
             CreateMap<Review, ReviewVM>().ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Customer.Image));
-            CreateMap<Blog, BlogVM>();
+            CreateMap<Blog, BlogVM>().ReverseMap();
+            CreateMap<Blog, BlogEditVM>().ReverseMap();
+            CreateMap<Blog, BlogCreateVM>().ReverseMap();
+            CreateMap<BlogEditVM, BlogVM>().ReverseMap();
+
+
             CreateMap<Tag, TagVM>();
             CreateMap<Product, ProductVM>().ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Images.FirstOrDefault(m => m.IsMain).Image));
@@ -46,6 +51,8 @@ namespace ChristmasBackend.Helpers.Mappings
             CreateMap<ContactMessage, ContactMessageVM>().ReverseMap();
             CreateMap<ContactMessageCreateVM, ContactMessage>().ReverseMap();
             CreateMap<ContactInfo, ContactInfoEditVM>().ReverseMap();
+            CreateMap<ContactInfo, ContactInfoVM>().ReverseMap();
+
             CreateMap<Setting, SettingEditVM>().ReverseMap();
             CreateMap<Tag, TagCreateVM>().ReverseMap();
             CreateMap<Tag, TagEditVM>().ReverseMap();

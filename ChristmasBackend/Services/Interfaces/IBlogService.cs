@@ -5,7 +5,10 @@ namespace ChristmasBackend.Services.Interfaces
 {
     public interface IBlogService
     {
-        Task<List<BlogVM>> GetAllAsync();
+        Task<List<BlogVM>> GetAllWithTakeAsync();
         Task<BlogVM> GetByIdAsync(int id);
+        Task<List<BlogVM>> GetAllAsync();
+        Task DeleteAsync(int id);
+
     }
 }

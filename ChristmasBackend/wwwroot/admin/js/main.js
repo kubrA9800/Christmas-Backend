@@ -13,4 +13,20 @@
         })
 
     })
+
+
+
+    $(document).on("click", ".imageblogs-delete button", function (e) {
+        console.log("gvhbjn")
+        let id = parseInt($(this).attr("data-id"));
+
+        $.ajax({
+            url: `/admin/blog/deleteblogimage?id=${id}`,
+            type: "Post",
+            success: function (res) {
+                $(e.target).parent().remove();
+            }
+        })
+
+    })
 })
