@@ -15,32 +15,33 @@ namespace ChristmasBackend.Services
         private readonly IWebHostEnvironment _env;
         private readonly IMapper _mapper;
 
-        public SettingService(AppDbContext context, IMapper mapper)
+        public SettingService(AppDbContext context, IMapper mapper,IWebHostEnvironment env)
         {
             _context = context;
             _mapper = mapper;
+            _env = env;
         }
 
        
 
-        public async Task DeleteAsync(int id)
-        {
-            Setting setting = await _context.Settings.FirstOrDefaultAsync(m => m.Id == id);
+        //public async Task DeleteAsync(int id)
+        //{
+        //    Setting setting = await _context.Settings.FirstOrDefaultAsync(m => m.Id == id);
 
-            _context.Settings.Remove(setting);
-            await _context.SaveChangesAsync();
+        //    _context.Settings.Remove(setting);
+        //    await _context.SaveChangesAsync();
 
-            if (setting.Value.Contains("png") || setting.Value.Contains("jpeg")|| setting.Value.Contains("jpg"))
-            {
-                string path = _env.GetFilePath("img", setting.Value);
+        //    if (setting.Value.Contains("png") || setting.Value.Contains("jpeg")|| setting.Value.Contains("jpg"))
+        //    {
+        //        string path = _env.GetFilePath("img", setting.Value);
 
-                if (File.Exists(path))
-                {
-                    File.Delete(path);
-                }
-            }
+        //        if (File.Exists(path))
+        //        {
+        //            File.Delete(path);
+        //        }
+        //    }
 
-        }
+        //}
 
 
 
@@ -58,9 +59,6 @@ namespace ChristmasBackend.Services
         }
 
 
-
-      
-
         public async Task<Setting> GetByIdAsync(int id)
         {
             return await _context.Settings.FirstOrDefaultAsync(m => m.Id == id);
@@ -70,11 +68,11 @@ namespace ChristmasBackend.Services
         {
             if(setting.Value.Contains("jpg")|| setting.Value.Contains("png")|| setting.Value.Contains("jpeg"))
             {
-                string oldPath = _env.GetFilePath("img/team", setting.Value);
+                string oldPath = _env.GetFilePath("img", setting.Value);
 
                 string fileName = $"{Guid.NewGuid()}-{setting.ImageValue.FileName}";
 
-                string newPath = _env.GetFilePath("img/team", fileName);
+                string newPath = _env.GetFilePath("img", fileName);
 
                 Setting dbSetting=await _context.Settings.FirstOrDefaultAsync(m => m.Id == setting.Id);
 
@@ -88,6 +86,16 @@ namespace ChristmasBackend.Services
                 }
 
                 await setting.ImageValue.SaveFileAsync(newPath);
+            }
+            else
+            {
+                Setting dbSetting = await _context.Settings.FirstOrDefaultAsync(m => m.Id == setting.Id);
+
+                _mapper.Map(setting, dbSetting);
+
+                _context.Settings.Update(dbSetting);
+
+                await _context.SaveChangesAsync();
             }
             
         }

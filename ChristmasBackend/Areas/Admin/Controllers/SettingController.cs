@@ -1,4 +1,5 @@
-﻿using ChristmasBackend.Areas.ViewModels.Contact;
+﻿using ChristmasBackend.Areas.ViewModels.Category;
+using ChristmasBackend.Areas.ViewModels.Contact;
 using ChristmasBackend.Areas.ViewModels.Setting;
 using ChristmasBackend.Areas.ViewModels.Tag;
 using ChristmasBackend.Models;
@@ -28,13 +29,13 @@ namespace ChristmasBackend.Areas.Admin.Controllers
         }
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
-        {
-            await _settingService.DeleteAsync(id);
-            return RedirectToAction(nameof(Index));
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Delete(int id)
+        //{
+        //    await _settingService.DeleteAsync(id);
+        //    return RedirectToAction(nameof(Index));
+        //}
 
 
         [HttpGet]
@@ -70,10 +71,7 @@ namespace ChristmasBackend.Areas.Admin.Controllers
 
             if (dbSetting.Value.Contains("png") || dbSetting.Value.Contains("jpeg") || dbSetting.Value.Contains("jpg"))
             {
-                //if (!ModelState.IsValid)
-                //{
-                //    return View(setting);
-                //}
+                
                 setting.Value=dbSetting.Value;
                 setting.Key = dbSetting.Key;
                 
@@ -91,6 +89,23 @@ namespace ChristmasBackend.Areas.Admin.Controllers
                 if (!setting.ImageValue.CheckFilesize(200))
                 {
                     ModelState.AddModelError("Photo", "File size can be max 200 kb");
+                    return View(setting);
+                }
+
+            }
+            else
+            {
+                if (id is null) return BadRequest();
+
+                Setting dbsetting = await _settingService.GetByIdAsync((int)id);
+
+                if (dbSetting is null) return NotFound();
+
+                setting.Key = dbSetting.Key;
+
+
+                if (!ModelState.IsValid)
+                {
                     return View(setting);
                 }
 

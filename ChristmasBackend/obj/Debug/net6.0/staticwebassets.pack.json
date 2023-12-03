@@ -17781,6 +17781,10 @@
       "PackagePath": "staticwebassets\\img\\ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg"
     },
     {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png",
+      "PackagePath": "staticwebassets\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png"
+    },
+    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
     },
@@ -17919,10 +17923,6 @@
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\team\\4.jpg",
       "PackagePath": "staticwebassets\\img\\team\\4.jpg"
-    },
-    {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\team\\footer-logo.png",
-      "PackagePath": "staticwebassets\\img\\team\\footer-logo.png"
     },
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\testimonial\\1.jpg",

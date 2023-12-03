@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aW30DF6Syyr2QfG7yZmiMUQBHXSZwS5vZeVP9Pz8JJU=",
+  "Hash": "l239Xg0YANvPkiaWE8M9mC80QPcTVCw3Q0dpUiZGp9c=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -75599,6 +75599,23 @@
       "OriginalItemSpec": "wwwroot\\img\\ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg"
     },
     {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "img/f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png"
+    },
+    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\favicon.ico",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -76192,23 +76209,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\team\\4.jpg"
-    },
-    {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\team\\footer-logo.png",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/team/footer-logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\team\\footer-logo.png"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\testimonial\\1.jpg",
