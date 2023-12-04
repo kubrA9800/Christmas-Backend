@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hVgKp0LVJT56ip7587WkkS2dMYvEkw0oxlNLGvh3FSM=",
+  "Hash": "Iv28l1IDHPASw4hiMJOtxU89r9pIGkhSr/3JBoqvFq4=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -76379,6 +76379,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vendor\\modernizr-2.8.3.min.js"
+    },
+    {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\wishlist.js",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "js/wishlist.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\wishlist.js"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\style.css",

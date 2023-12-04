@@ -1,4 +1,5 @@
 ﻿using ChristmasBackend.Data;
+using ChristmasBackend.Helpers.Responses;
 using ChristmasBackend.Models;
 using ChristmasBackend.Services.Interfaces;
 using ChristmasBackend.ViewModels.Cart;
@@ -11,20 +12,46 @@ namespace ChristmasBackend.Services
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
+        private readonly IProductService _productService;
 
         public CartService(IHttpContextAccessor httpContextAccessor, 
-                           AppDbContext context)
+                           AppDbContext context,
+                           IProductService productService)
         {
             _httpContextAccessor = httpContextAccessor;
             _context = context;
+            _productService = productService;
+
         }
-        public void DeleteData(int? id)
+        public async Task<DeleteBasketResponses> DeleteData(int? id)
         {
-            var baskets = JsonConvert.DeserializeObject<List<CartVM>>(_httpContextAccessor.HttpContext.Request.Cookies["basket"]);
-            var deletedProduct = baskets.FirstOrDefault(b => b.ProductId == id);
-            baskets.Remove(deletedProduct);
-            _httpContextAccessor.HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(baskets));
+            List<decimal> grandTotal = new();
+            var basket = JsonConvert.DeserializeObject<List<CartVM>>(_httpContextAccessor.HttpContext.Request.Cookies["basket"]);
+            var deletedProduct = basket.FirstOrDefault(b => b.ProductId == id);
+            basket.Remove(deletedProduct);
+
+            foreach (var item in basket)
+            {
+                var product = await _productService.GetByIdAsync(item.ProductId);
+
+                decimal productPrice = product.Price;
+
+                decimal total = item.Count * productPrice;
+
+                grandTotal.Add(total);
+            }
+
+            _httpContextAccessor.HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basket));
+
+            return new DeleteBasketResponses
+            {
+                Count = basket.Sum(m => m.Count),
+                GrandTotal = grandTotal.Sum()
+            };
+
+
         }
+
 
         public async Task<List<CartProduct>> GetAllByCartIdAsync(int? cartId)
         {
@@ -82,5 +109,7 @@ namespace ChristmasBackend.Services
             return basket.Sum(m => m.Count);
 
         }
+
+      
     }
 }

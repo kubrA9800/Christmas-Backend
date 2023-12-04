@@ -1,72 +1,82 @@
-﻿@model List<CartDetailVM>
+﻿﻿
+@model List<CartDetailVM>
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
+	decimal grandTotal = Model.Sum(m => m.Total);
 }
 
 <div style="margin-right:100px" class="container">
-    <h1 class="text-center mt-3 mb-3">Products</h1>
+	
 
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>
-                        Image
-                    </th>
-                    <th>
-                        Name
-                    </th>
+	<div class="alert alert-info alert-basket-empty @(Model.Count == 0 ? "":"d-none")" role="alert">
+		Basket is empty !
+	</div>
 
-                    <th>
-                        Price
-                    </th>
-                    <th>
-                        Count
-                    </th>
+	<div class="table-responsive basket-table @(Model.Count == 0 ? "d-none" : "")">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						Image
+					</th>
+					<th>
+						Name
+					</th>
+					<th>
+						Price
+					</th>
+					<th>
+						Count
+					</th>
+					<th>
+						Total Price
+					</th>
+					<th>
+						
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var product in Model)
+				{
+					<tr>
+						<td class="py-1">
 
-                    <th>
-                        Total Price
-                    </th>
-                    <th>
 
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var product in Model)
-                {
-                    <tr>
-                        <td class="py-1">
+							<img style="width:150px; height:150px" src="/img/product/@product.Image" alt="image" />
 
-                            <img style="width:150px; height:150px" src="~/img/product/@product.Image" alt="image" />
 
-                        </td>
-                        <td>
-                            @product.Name
-                        </td>
-                        <td>
-                            @product.Price
-                        </td>
-                        <td>
-                            <button><i class="fa-solid fa-minus"></i></button>
-                            <span><input type="text" value="@product.Count"></span>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </td>
+						</td>
+						<td>
+							@product.Name
+						</td>
+						
+						<td>
+							$@product.Price
+						</td>
+						
+						<td>
+							<i class="fa-solid fa-minus" data-id="@product.Id"></i> <span>@product.Count</span> <i class="fa-solid fa-plus" data-id="@product.Id"></i>
+						</td>
+						
+					
+						<td class="item-total-price">
+							<span>@product.Total</span> $
+						</td>
+						<td>
+							<button type="submit" class="btn btn-outline-danger delete-basket-item" data-id="@product.Id">Delete</button>
+							
+						</td>
+					</tr>
+				}
 
-                        <td>
-                            $@product.Total
-                        </td>
-                        <td>
+			</tbody>
+		</table>
+		<div class="grand-total mt-2">
+			<h1>Grand total: <span>@grandTotal</span> $</h1>
+		</div>
+	</div>
 
-                            <form class="d-inline-block" method="post" asp-action="Delete" asp-route-id="@product.Id">
-                                <button type="submit" class="btn btn-outline-danger">Delete</button>
-                            </form>
-                        </td>
-                    </tr>
-                }
-
-            </tbody>
-        </table>
-    </div>
 </div>
+
 

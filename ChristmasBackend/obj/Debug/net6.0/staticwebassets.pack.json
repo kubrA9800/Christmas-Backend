@@ -17965,6 +17965,10 @@
       "PackagePath": "staticwebassets\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\wishlist.js",
+      "PackagePath": "staticwebassets\\js\\wishlist.js"
+    },
+    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
     },

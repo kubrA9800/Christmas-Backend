@@ -39,7 +39,7 @@
             success: function (res) {
                 console.log(res.count)
 
-                $("header .rounded-circle").text(res.count);
+                $(".header-top .basket-count").text(res.count);
                 $(e.target).closest("tr").remove();
                 $(".grand-total h1 span").text(res.grandTotal);
 
