@@ -3,6 +3,8 @@ using ChristmasBackend.Services.Interfaces;
 using ChristmasBackend.Services;
 using Microsoft.EntityFrameworkCore;
 using System;
+using ChristmasBackend.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +19,21 @@ builder.Services.AddSession();
 builder.Services.AddDbContext<AppDbContext>(options =>
        options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
 
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+				.AddEntityFrameworkStores<AppDbContext>()
+				.AddDefaultTokenProviders();
 
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequiredLength = 6;
+
+    options.User.RequireUniqueEmail = true;
+});
 
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<IReviewService, ReviewServices>();
@@ -52,6 +68,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>

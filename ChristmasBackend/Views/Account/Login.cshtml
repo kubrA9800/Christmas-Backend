@@ -1,0 +1,63 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: white;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: rgb(180,68,58);
+        background: linear-gradient(90deg, rgba(180,68,58,1) 0%, rgba(181,110,92,1) 56%, rgba(168,26,10,1) 95%);
+    }
+</style>
+
+
+
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-white text-black" style="border-radius: 1rem;height:450px">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-2 mt-md-2 pb-1">
+
+                            <h2 class="fw-bold mb-3 text-uppercase">Sign in</h2>
+                            <div style="color:red" ; asp-validation-summary="All"></div>
+                            <form method="post" asp-controller="Account" asp-action="Login">
+                                
+                                <div class="form-outline form-white mb-2">
+                                    <label asp-for="Email">Email:</label>
+                                    <input class="form-control form-control-sm" asp-for="Email">
+                                    <span style="color:red; margin-bottom:10px" asp-validation-for="Email"></span>
+                                </div>
+
+                                <div class="form-outline form-white mb-4">
+                                    <label asp-for="Password">Password:</label>
+                                    <input class="form-control form-control-sm" asp-for="Password">
+                                    <span style="color:red; margin-bottom:10px" asp-validation-for="Password"></span>
+                                </div>
+                                
+                                <button class="btn bg-dark btn-outline-light btn-sm mt-5 px-5" type="submit">Sign in</button>
+
+
+                            </form>
+
+                        </div>
+
+                        <div>
+                            <p class="mb-0">
+                                Don't have an account? <a asp-action="Register" class="text-dark-50 fw-bold">Sign up</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

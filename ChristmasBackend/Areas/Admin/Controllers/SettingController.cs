@@ -12,8 +12,8 @@ using NuGet.Configuration;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class SettingController : Controller
+    
+    public class SettingController : MainController
     {
         private readonly ISettingService _settingService;
         public SettingController(ISettingService settingService)

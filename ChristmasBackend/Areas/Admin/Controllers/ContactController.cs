@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
 
-    [Area("Admin")]
-    public class ContactController : Controller
+    public class ContactController : MainController
     {
         private readonly IContactService _contactService;
         private readonly AppDbContext _context;

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class AdvertController : Controller
+   
+    public class AdvertController : MainController
     {
         private readonly AppDbContext _context;
         private readonly IWebHostEnvironment _env;

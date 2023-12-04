@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class ProductController : Controller
+    
+    public class ProductController : MainController
     {
         private readonly IProductService _productService;
         private readonly AppDbContext _context;

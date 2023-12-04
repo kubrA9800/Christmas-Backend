@@ -35,7 +35,10 @@ namespace ChristmasBackend.Controllers
 
         public async Task<IActionResult> Search(string searchText)
         {
-
+            if (searchText == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View(await _productService.SearchAsync(searchText));
         }
     }

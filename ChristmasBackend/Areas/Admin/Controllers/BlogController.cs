@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class BlogController : Controller
+    
+    public class BlogController : MainController
     {
         private readonly AppDbContext _context;
         private readonly IBlogService _blogService;

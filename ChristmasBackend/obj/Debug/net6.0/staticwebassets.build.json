@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l239Xg0YANvPkiaWE8M9mC80QPcTVCw3Q0dpUiZGp9c=",
+  "Hash": "63n0EfCh2OOVgOWqDl0LS3sMLs0jryfecy/wSn4eiZA=",
   "Source": "ChristmasBackend",
   "BasePath": "_content/ChristmasBackend",
   "Mode": "Default",
@@ -75106,6 +75106,23 @@
       "OriginalItemSpec": "wwwroot\\fonts\\ionicons28b5.woff"
     },
     {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\25a06fc5-32bd-444c-a027-226af00725b3-footer-logo.png",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "img/25a06fc5-32bd-444c-a027-226af00725b3-footer-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\25a06fc5-32bd-444c-a027-226af00725b3-footer-logo.png"
+    },
+    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\about.jpg",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -75121,23 +75138,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\about.jpg"
-    },
-    {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\b1aade0b-b03f-47fd-a2d5-793c1231231a-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/b1aade0b-b03f-47fd-a2d5-793c1231231a-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\b1aade0b-b03f-47fd-a2d5-793c1231231a-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\banner\\1.jpg",
@@ -75582,40 +75582,6 @@
       "OriginalItemSpec": "wwwroot\\img\\comment\\3.jpg"
     },
     {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg"
-    },
-    {
-      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png",
-      "SourceId": "ChristmasBackend",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
-      "BasePath": "_content/ChristmasBackend",
-      "RelativePath": "img/f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png"
-    },
-    {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\favicon.ico",
       "SourceId": "ChristmasBackend",
       "SourceType": "Discovered",
@@ -75631,6 +75597,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\footer-logo.png",
+      "SourceId": "ChristmasBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\",
+      "BasePath": "_content/ChristmasBackend",
+      "RelativePath": "img/footer-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\footer-logo.png"
     },
     {
       "Identity": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\hero\\1.jpg",

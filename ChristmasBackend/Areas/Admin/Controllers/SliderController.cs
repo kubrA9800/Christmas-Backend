@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class SliderController : Controller
+    
+    public class SliderController : MainController
     {
         private readonly AppDbContext _context;
         private readonly ISliderService _sliderService;

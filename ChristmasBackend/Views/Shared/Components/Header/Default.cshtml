@@ -32,7 +32,25 @@
                             <!-- Account Menu -->
                             <div class="account-menu col-md-4 col-12">
                                 <ul>
-                                    <li><a href="#">My Account</a></li>
+                                    @if (Model.UserFullName != null)
+                                    {
+                                        <li class="">@Model.UserFullName</li>
+
+                                    }
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li class="">
+                                            <form method="post" asp-controller="Account" asp-action="Logout">
+                                                <input style="background-color:white; color:black;border:none" type="submit" value="Logout" />
+                                            </form>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class=""><a  asp-controller="Account" asp-action="Login">Sign in</a></li>
+                                        <li class=""><a  asp-controller="Account" asp-action="Register">Sign up</a></li>
+                                    }
+                                   
                                     <li><a href="wishlist.html">Wishlist</a></li>
                                     <li>
                                         <a href="#" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>

@@ -17665,12 +17665,12 @@
       "PackagePath": "staticwebassets\\fonts\\ionicons28b5.woff"
     },
     {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\about.jpg",
-      "PackagePath": "staticwebassets\\img\\about.jpg"
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\25a06fc5-32bd-444c-a027-226af00725b3-footer-logo.png",
+      "PackagePath": "staticwebassets\\img\\25a06fc5-32bd-444c-a027-226af00725b3-footer-logo.png"
     },
     {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\b1aade0b-b03f-47fd-a2d5-793c1231231a-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg",
-      "PackagePath": "staticwebassets\\img\\b1aade0b-b03f-47fd-a2d5-793c1231231a-1076031b-984f-4358-bdb2-82ffc06ac75f-blog-feature-img-1.jpg"
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\img\\about.jpg"
     },
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\banner\\1.jpg",
@@ -17777,16 +17777,12 @@
       "PackagePath": "staticwebassets\\img\\comment\\3.jpg"
     },
     {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg",
-      "PackagePath": "staticwebassets\\img\\ee3442e2-b5ff-4461-a7cf-bfdd7b5228cb-934b710b-51cb-4ff8-90fd-07da1b4b36ef-blog-feature-img-1.jpg"
-    },
-    {
-      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png",
-      "PackagePath": "staticwebassets\\img\\f8095fd1-cc17-48f4-b57f-21aa0e45c8ad-7cfd575f-2925-48d3-bed0-aa1a57e7fc0e-h2-sign-img.png"
-    },
-    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\favicon.ico",
       "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\img\\footer-logo.png"
     },
     {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\img\\hero\\1.jpg",

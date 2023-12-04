@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class ReviewController : Controller
+    
+    public class ReviewController : MainController
     {
         private readonly IReviewService _reviewService;
 

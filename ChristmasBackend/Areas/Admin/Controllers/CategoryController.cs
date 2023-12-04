@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class CategoryController : Controller
+    
+    public class CategoryController : MainController
     {
         private readonly ICategoryService _categoryService;
         public CategoryController(ICategoryService categoryService)

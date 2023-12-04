@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class SubscribeController : Controller
+   
+    public class SubscribeController : MainController
     {
         private readonly ISubscribeService _subscribeService;
 

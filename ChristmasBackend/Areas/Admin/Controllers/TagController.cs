@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class TagController : Controller
+    
+    public class TagController : MainController
     {
         
         private readonly ITagService _tagService;

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChristmasBackend.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    public class TeamController : Controller
+    
+    public class TeamController : MainController
     {
         private readonly ITeamService _teamService;
         private readonly IWebHostEnvironment _env;
