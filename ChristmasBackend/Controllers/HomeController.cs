@@ -9,6 +9,7 @@ using ChristmasBackend.Models;
 using ChristmasBackend.Services;
 using ChristmasBackend.Services.Interfaces;
 using ChristmasBackend.ViewModels;
+using ChristmasBackend.ViewModels.Cart;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -24,13 +25,15 @@ namespace ChristmasBackend.Controllers
         private readonly IBlogService _blogService;
         private readonly IProductService _productService;
         private readonly ISubscribeService _subscribeService;
+        private readonly ICartService _cartService;
         public HomeController(AppDbContext context, 
                               ISliderService sliderService,
                               IAdvertService advertService,
                               IReviewService reviewService,
                               IBlogService blogService,
                               IProductService productService,
-                              ISubscribeService subscribeService)
+                              ISubscribeService subscribeService,
+                              ICartService cartService)
         {
             _context = context;
             _sliderService = sliderService;
@@ -39,6 +42,7 @@ namespace ChristmasBackend.Controllers
             _blogService = blogService;
             _productService = productService;
             _subscribeService = subscribeService;
+            _cartService = cartService;
 
         }
 
@@ -80,6 +84,27 @@ namespace ChristmasBackend.Controllers
 
             await _subscribeService.CreateAsync(subscribe);
             return RedirectToAction("Index", "Home");
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> AddToCart(int? id)
+        {
+            if (id is null) return BadRequest();
+
+            Product dbProduct = await _productService.GetByIdAsync((int)id);
+
+            if (dbProduct == null) return NotFound();
+
+            List<CartVM> carts = _cartService.GetDatasFromCookie();
+
+            CartVM existProduct = carts.FirstOrDefault(p => p.ProductId == id);
+
+            _cartService.SetDatasToCookie(carts, dbProduct, existProduct);
+
+            int cartCount = carts.Count;
+
+            return Ok(cartCount);
         }
 
 

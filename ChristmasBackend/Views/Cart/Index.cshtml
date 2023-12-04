@@ -1,0 +1,72 @@
+﻿@model List<CartDetailVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="margin-right:100px" class="container">
+    <h1 class="text-center mt-3 mb-3">Products</h1>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Name
+                    </th>
+
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Count
+                    </th>
+
+                    <th>
+                        Total Price
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td class="py-1">
+
+                            <img style="width:150px; height:150px" src="~/img/product/@product.Image" alt="image" />
+
+                        </td>
+                        <td>
+                            @product.Name
+                        </td>
+                        <td>
+                            @product.Price
+                        </td>
+                        <td>
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <span><input type="text" value="@product.Count"></span>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </td>
+
+                        <td>
+                            $@product.Total
+                        </td>
+                        <td>
+
+                            <form class="d-inline-block" method="post" asp-action="Delete" asp-route-id="@product.Id">
+                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

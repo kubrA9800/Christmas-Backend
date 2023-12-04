@@ -84,7 +84,7 @@ namespace ChristmasBackend.Services
             return _mapper.Map<List<ProductVM>>(await _context.Products.Include(m => m.Category).Include(m => m.Images).ToListAsync());
         }
 
-        public async Task<Product> GetByIdAsync(int id) => await _context.Products.FindAsync(id);
+        public async Task<Product> GetByIdAsync(int id) => await _context.Products.Include(m=>m.Category).Include(m=>m.Images).FirstOrDefaultAsync(m=>m.Id==id);
 
         public async Task<Product> GetByIdWithIncludesAsync(int id)
         {

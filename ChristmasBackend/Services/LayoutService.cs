@@ -6,17 +6,21 @@ namespace ChristmasBackend.Services
     public class LayoutService:ILayoutService
     {
         private readonly ISettingService _settingService;
-        public LayoutService(ISettingService settingService)
+        private readonly ICartService _cartService;
+        public LayoutService(ISettingService settingService, ICartService cartService)
         {
             _settingService = settingService;
+            _cartService = cartService;
         }
         public HeaderVM GetHeaderDatas()
         {
+
             Dictionary<string, string> settingDatas = _settingService.GetSettings();
-
-
+            int basketCount = _cartService.GetCount();
+            
             return new HeaderVM
             {
+                BasketCount = basketCount,
                 Logo = settingDatas["HeaderLogo"]
             };
         }

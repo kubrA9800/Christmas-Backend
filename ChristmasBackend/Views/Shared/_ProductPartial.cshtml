@@ -4,7 +4,7 @@
 {
     <div class="col-lg-4 col-md-6 col-12 mb-60">
 
-        <div class="product">
+        <div data-id="@item.Id" class="product">
 
             <!-- Image Wrapper -->
             <div class="image">
@@ -37,8 +37,9 @@
                 </div>
 
                 <!-- Action Button -->
-                <div class="action-button fix">
-                    <a href="#">add to cart</a>
+
+                <div class="@(User.Identity.IsAuthenticated ? "add-to-cart": "")  fix action-button ">
+                    <a asp-controller="Account" asp-action="Login">add to cart</a>
                 </div>
 
             </div>

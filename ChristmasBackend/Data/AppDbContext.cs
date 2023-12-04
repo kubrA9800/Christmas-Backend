@@ -25,6 +25,14 @@ namespace ChristmasBackend.Data
         public DbSet<ContactInfo> ContactInfos { get; set; }
         public DbSet<ContactMessage> ContactMessages { get; set; }
         public DbSet<Subscribe> Subscribes { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartProduct> CartProducts { get; set; }
+        public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<WishlistProduct> WishlistProducts { get; set; }
+
+
+
+
 
 
 

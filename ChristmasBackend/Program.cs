@@ -49,6 +49,10 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<ISubscribeService, SubscribeService>();
 builder.Services.AddScoped<IAdvertService, AdvertService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IWishListService, WishlistService>();
+
+
 
 
 

@@ -17929,6 +17929,10 @@
       "PackagePath": "staticwebassets\\js\\ajax-mail.js"
     },
     {
+      "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\basket.js",
+      "PackagePath": "staticwebassets\\js\\basket.js"
+    },
+    {
       "Id": "D:\\Christmas-Backend\\ChristmasBackend\\ChristmasBackend\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
